@@ -12,7 +12,7 @@ public class SecretNumber {
         Scanner reader = new Scanner(System.in); // creating a scanner object
 
 //        collect user input
-        int guessNumber = Integer.parseInt(reader.nextLine()); // as an integer
+        float guessNumber = Float.parseFloat(reader.nextLine()); // as a float
 
 //        check if the user input matches the secret number:
 //          report if the incorrect guess was too high
