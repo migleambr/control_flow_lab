@@ -21,13 +21,13 @@ public class WhatToWear {
         if (weather.equals("Rainy") && temperature < 12) {
             System.out.println("Wear a waterproof coat");
             // if sunny & temperature > 20
-        } else if (weather.equals("Sunny") && temperature >= 20) {
+        } else if (weather.equals("Sunny") && temperature > 20) {
             System.out.println("Wear a hat");
             // if snowy & temperature < 0
-        } else if (weather.equals("Snowy") && temperature =< 0) {
+        } else if (weather.equals("Snowy") && temperature < 0) {
             System.out.println("Wear winter boots");
             // if cloudy & temperature < 15
-        } else if (weather.equals("Cloudy") && temperature =< 15) {
+        } else if (weather.equals("Cloudy") && temperature < 15) {
             System.out.println("Wear a jumper");
         } else {
             System.out.println("Sorry, please provide a different weather description!");
