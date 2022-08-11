@@ -12,12 +12,19 @@ public class SecretNumber {
         Scanner reader = new Scanner(System.in); // creating a scanner object
 
 //        collect user input
-        int guessNumber = Integer.parseInt(reader.nextLine());
+        int guessNumber = Integer.parseInt(reader.nextLine()); // as an integer
 
 //        check if the user input matches the secret number:
 //          report if the incorrect guess was too high
+        if (guessNumber > secretNumber) {
+            System.out.println("Too high!");
 //          report if the incorrect guess was too low
+        } else if (guessNumber < secretNumber) {
+            System.out.println("Too low!");
 //          report if the user guessed the number correctly
+        } else {
+            System.out.println("Correct!");
+        }
 
     }
 
